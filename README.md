@@ -36,7 +36,7 @@ Contains all HTML templates for the application:
 Contains all static resources for the application:  
 - `bootstrap/` – CSS and JavaScript files for the Bootstrap framework  
 - `images/` – Images used in the application  
-  - `produse/` – Product images for the shop  
+- `produse/` – Product images for the shop  
 - `style.css` – Custom CSS for the application  
 
 ## Features  
