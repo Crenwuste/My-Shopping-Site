@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card text-center">
+        <div class="card-body">
+            <h2 class="card-title mb-4">Comandă plasată cu succes!</h2>
+            <p class="card-text">Vă mulțumim pentru comandă. Veți primi un email de confirmare în scurt timp.</p>
+            <a href="{{ url_for('index') }}" class="btn btn-primary">Înapoi la magazin</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

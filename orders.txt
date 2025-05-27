@@ -1,0 +1,16 @@
+
+========================================
+
+Detalii client:
+Nume complet: dsf
+Email: dragos@yahoo.com
+Telefon: 0700343565
+Adresă: asgerh
+Metodă de plată: card
+
+Produse comandate:
+- Frigider Samsung x 1 = 2499 RON
+- Mașină de spălat LG x 2 = 3798 RON
+
+Total comandă: 6312.0 RON
+========================================

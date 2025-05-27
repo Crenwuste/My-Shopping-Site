@@ -1,0 +1,63 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <!-- Informatii de contact -->
+    <div class="col-md-6">
+      <h2 class="mb-4">Contactează-ne</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Adresă:</strong> Strada Chemarii, nr. 123, București</p>
+        <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> +40 123 456 789</p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> contact@onlinemarket.ro</p>
+        <p><i class="fas fa-clock"></i> <strong>Program:</strong> Luni-Vineri: 9:00 - 18:00</p>
+      </div>
+      
+      <div class="social-media mt-4">
+        <h5>Urmărește-ne:</h5>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-danger"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Formular de contact -->
+    <div class="col-md-6">
+      <div class="contact-form">
+        <h3 class="mb-4">Trimite un mesaj</h3>
+        <form action="/submit_contact" method="POST">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Numele tău" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="subject" placeholder="Subiect">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Mesajul tău" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Trimite</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Harta -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h4>Locația noastră</h4>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.123456789012!2d26.076736!3d44.330462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDE5JzQ5LjciTiAyNsKwMDQnMzYuMyJF!5e0!3m2!1sen!2sro!4v1234567890123!5m2!1sen!2sro&q=44.330462,26.076736&markers=color:red%7C44.330462,26.076736&zoom=17"
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
